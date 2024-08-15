@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List - APP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Sweet Alert CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="todo-header">
+            <h2>To Do List</h2>
+            <img src="assets/notebook.gif" alt="" height="50px">
+        </div>
+
+        <div class="todo-body">
+            <input type="text" id="todoText" class="todo-input" placeholder="Add your task">
+            <img src="assets/icons8-plus-30.png" alt="+" id="AddUpdateClick" onclick="CreateToDoData()">
+        </div>
+        <ul id="list-items" class="list-items"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
